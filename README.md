@@ -27,15 +27,15 @@ Eric Fischer from the Purchasing Department at Bartell Ltd has received an email
 
 ### Q1) What was the date and time for the first HTTP connection to the malicious IP?
 
-First we need to view only the HTTP traffic using the following filter: `http`
+First I need to view only the HTTP traffic using the following filter: `http`
 
-The defualt time format is in seconds since beginning of capture. Since we are looking for the date and time of the first HTTP connection, we need to change the time format to UTC.
+The defualt time format is in seconds since beginning of capture. Since I am looking for the date and time of the first HTTP connection, I need to change the time format to UTC.
 
 <img src="https://github.com/emann615/emann615/assets/117882385/1b563f4f-3b7c-4d79-9a1c-e85b4e02bfe5" height="70%" width="70%"/>
 </br>
 </br>
 
-Now we can see the date and time of the first HTTP connection to the malicious IP.
+Now I can see the date and time of the first HTTP connection to the malicious IP.
 
 <img src="https://github.com/emann615/emann615/assets/117882385/308a0aa5-700c-458c-9074-b4c56222fc50" height="100%" width="100%"/>
 </br>
@@ -45,7 +45,7 @@ Now we can see the date and time of the first HTTP connection to the malicious I
 
 ### Q2) What is the name of the zip file that was downloaded?
 
-If look back at that first HTTP connection, we can see that it is a GET request for a zip file.
+If I look back at that first HTTP connection, I can see that it is a GET request for a zip file.
 
 <img src="https://github.com/emann615/emann615/assets/117882385/0685cd64-f5b4-41a7-9279-27e8c42a5c62" height="50%" width="50%"/>
 </br>
@@ -55,7 +55,7 @@ If look back at that first HTTP connection, we can see that it is a GET request 
 
 ### Q3) What was the domain hosting the malicious zip file?
 
-To find the domain, we need to view the HTTP headers for the GET request. We can find the HTTP headers by looking in the Packet Details Pane. The domain is next to the Host header.
+To find the domain, I need to view the HTTP headers for the GET request. I can find the HTTP headers by looking in the Packet Details Pane. The domain is next to the Host header.
 
 <img src="https://github.com/emann615/emann615/assets/117882385/cfcb9d16-ce6c-444b-86b7-6d1b53f6d2c7" height="50%" width="50%"/>
 </br>
@@ -65,13 +65,13 @@ To find the domain, we need to view the HTTP headers for the GET request. We can
 
 ### Q4) Without downloading the file, what is the name of the file in the zip file?
 
-We can find the file contained in the zip file by viewing the response to the GET request. We can view the response by following the TCP stream.
+I can find the file contained in the zip file by viewing the response to the GET request. I can view the response by following the TCP stream.
 
 <img src="https://github.com/emann615/emann615/assets/117882385/eb260e9a-1efe-406c-870b-98b2880a70d9" height="70%" width="70%"/>
 </br>
 </br>
 
-The request from the client is in red text, and the response from the server is in blue text. If we examin the response, we can see an XLS file.
+The request from the client is in red text, and the response from the server is in blue text. If I examin the response, I can see an XLS file.
 
 <img src="https://github.com/emann615/emann615/assets/117882385/bb1d25a8-2ae0-41e7-9633-f8900e10c353" height="80%" width="80%"/>
 </br>
@@ -79,7 +79,15 @@ The request from the client is in red text, and the response from the server is 
 
 **A4) chart-1530076591.xls**
 
+### Q5) What is the name of the webserver of the malicious IP from which the zip file was downloaded?
 
+If I view the HTTP hearders of the response, I can find the webserver next to the Server header.
+
+<img src="https://github.com/emann615/emann615/assets/117882385/d7a22240-c679-45b4-9dcc-0f26578423bd" height="50%" width="50%"/>
+</br>
+</br>
+
+**A5) LiteSpeed**
 
 
 
