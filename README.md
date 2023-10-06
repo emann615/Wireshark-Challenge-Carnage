@@ -35,8 +35,17 @@ The defualt time format is in seconds since beginning of capture. Since we are l
 
 Now we can see the date and time of the first HTTP connection to the malicious IP.
 
+<img src="https://github.com/emann615/emann615/assets/117882385/308a0aa5-700c-458c-9074-b4c56222fc50" height="90%" width="90%"/>
+</br>
+</br>
+
 A1)
 
-<img src="https://github.com/emann615/emann615/assets/117882385/308a0aa5-700c-458c-9074-b4c56222fc50" height="80%" width="80%"/>
+
+
+
+
+
+<img src="" height="70%" width="70%"/>
 </br>
 </br>
