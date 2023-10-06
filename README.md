@@ -109,7 +109,12 @@ Based on the hint, I can use the following filter: `frame.time >= "Sep 24, 2021 
 </br>
 </br>
 
-To decrease the amount of packets I have to look through, I can also fiter for only the packets with the Client Hello message by using the following filter: 
+To decrease the amount of packets I have to look through, I can also fiter for only the packets with the Client Hello message by using the following filter: `(frame.time >= "Sep 24, 2021 16:45:11" && frame.time <= "Sep 24, 2021 16:45:30" && tcp.port==443) && (tls.handshake.type == 1)`
+
+<img src="https://github.com/emann615/emann615/assets/117882385/077b2a33-a49d-45fb-a182-05723e901153" height="90%" width="90%"/>
+</br>
+</br>
+
 
 
 
