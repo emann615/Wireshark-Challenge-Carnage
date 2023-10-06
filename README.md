@@ -19,6 +19,8 @@ Wireshark is an open-source, cross-platform network packet analyser tool capable
 
 ## Walk-Through
 
+### Scenario
+
 Eric Fischer from the Purchasing Department at Bartell Ltd has received an email from a known contact with a Word document attachment. Upon opening the document, he accidentally clicked on "Enable Content."  The SOC Department immediately received an alert from the endpoint agent that Eric's workstation was making suspicious connections outbound. The pcap was retrieved from the network sensor and handed to you for analysis. 
 
 **Task:** Investigate the packet capture and uncover the malicious activities. 
