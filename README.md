@@ -53,6 +53,15 @@ If look back at that first HTTP connection, we can see that it is a GET request 
 
 **A2) documents.zip**
 
+### Q3) What was the domain hosting the malicious zip file?
+
+To find the domain, we need to view the HTTP headers for the GET request. We can find the HTTP headers by looking in the Packet Details Pane. The domain is next to the Host header.
+
+<img src="https://github.com/emann615/emann615/assets/117882385/cfcb9d16-ce6c-444b-86b7-6d1b53f6d2c7" height="50%" width="50%"/>
+</br>
+</br>
+
+**A3) attirenepal.com**
 
 
 <img src="" height="70%" width="70%"/>
