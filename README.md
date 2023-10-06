@@ -73,7 +73,7 @@ We can find the file contained in the zip file by viewing the response to the GE
 
 The request from the client is in red text, and the response from the server is in blue text. If we examin the response, we can see an XLS file.
 
-<img src="https://github.com/emann615/emann615/assets/117882385/bb1d25a8-2ae0-41e7-9633-f8900e10c353" height="70%" width="70%"/>
+<img src="https://github.com/emann615/emann615/assets/117882385/bb1d25a8-2ae0-41e7-9633-f8900e10c353" height="80%" width="80%"/>
 </br>
 </br>
 
