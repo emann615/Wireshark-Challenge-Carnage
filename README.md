@@ -99,6 +99,19 @@ I can find the viersion of the webserver next to the x-powered-by header.
 
 **A6) PHP/7.2.34**
 
+### Q7) Malicious files were downloaded to the victim host from multiple domains. What were the three domains involved with this activity?
+
+_Check HTTPS traffic. Narrow down the timeframe from 16:45:11 to 16:45:30._
+
+Based on the hint, I can use the following filter: `frame.time >= "Sep 24, 2021 16:45:11" && frame.time <= "Sep 24, 2021 16:45:30" && tcp.port==443`
+
+<img src="https://github.com/emann615/emann615/assets/117882385/4a64319d-5258-46ec-a89d-835e1746c959" height="100%" width="100%"/>
+</br>
+</br>
+
+To decrease the amount of packets I have to look through, I can also fiter for only the packets with the Client Hello message by using the following filter: 
+
+
 
 
 
