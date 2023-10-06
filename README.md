@@ -89,6 +89,17 @@ If I view the HTTP hearders of the response, I can find the webserver next to th
 
 **A5) LiteSpeed**
 
+### Q6) What is the version of the webserver from the previous question?
+
+I can find the viersion of the webserver next to the x-powered-by header.
+
+<img src="https://github.com/emann615/emann615/assets/117882385/8c63e757-9b29-484e-814f-7728567c6fa5" height="50%" width="50%"/>
+</br>
+</br>
+
+**A6) PHP/7.2.34**
+
+
 
 
 
