@@ -29,7 +29,7 @@ First we need to view only the HTTP traffic using the following filter: `http`
 
 The defualt time format is in seconds since beginning of capture. Since we are looking for the date and time of the first HTTP connection, we need to change the time format to UTC.
 
-<img src="https://github.com/emann615/emann615/assets/117882385/1b563f4f-3b7c-4d79-9a1c-e85b4e02bfe5" height="50%" width="50%"/>
+<img src="https://github.com/emann615/emann615/assets/117882385/1b563f4f-3b7c-4d79-9a1c-e85b4e02bfe5" height="70%" width="70%"/>
 </br>
 </br>
 
@@ -37,6 +37,6 @@ Now we can see the date and time of the first HTTP connection to the malicious I
 
 A1)
 
-<img src="https://github.com/emann615/emann615/assets/117882385/308a0aa5-700c-458c-9074-b4c56222fc50" height="50%" width="50%"/>
+<img src="https://github.com/emann615/emann615/assets/117882385/308a0aa5-700c-458c-9074-b4c56222fc50" height="80%" width="80%"/>
 </br>
 </br>
