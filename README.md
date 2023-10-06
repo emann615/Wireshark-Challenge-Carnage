@@ -115,6 +115,20 @@ To decrease the amount of packets I have to look through, I can also fiter for o
 </br>
 </br>
 
+If I examine the information in the Packet Bytes Pane for each packet, I will find three suspicous domains.
+
+<img src="https://github.com/emann615/emann615/assets/117882385/eeb7cbc6-b34e-4c75-a759-ba7646cfa1e8" height="70%" width="70%"/>
+</br>
+</br>
+
+<img src="" height="70%" width="70%"/>
+</br>
+</br>
+
+<img src="" height="70%" width="70%"/>
+</br>
+</br>
+
 
 
 
