@@ -43,7 +43,15 @@ Now we can see the date and time of the first HTTP connection to the malicious I
 
 **A1) 2021-09-24 16:44:38**
 
+### Q2) What is the name of the zip file that was downloaded?
 
+If look back at that first HTTP connection, we can see that it is a GET request for a zip file.
+
+<img src="https://github.com/emann615/emann615/assets/117882385/0685cd64-f5b4-41a7-9279-27e8c42a5c62" height="50%" width="50%"/>
+</br>
+</br>
+
+**A2) documents.zip**
 
 
 
