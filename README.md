@@ -39,8 +39,7 @@ Now we can see the date and time of the first HTTP connection to the malicious I
 </br>
 </br>
 
-A1)
-
+**A1) 2021-09-24 16:44:38**
 
 
 
