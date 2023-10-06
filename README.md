@@ -167,7 +167,7 @@ After going through the list of IP addresses and analyzing them in VirusTotal I 
 </br>
 </br>
 
-<img src="https://github.com/emann615/emann615/assets/117882385/d389bbed-090c-4914-b1f9-3ed7107ed44a" height="60%" width="60%"/>
+<img src="https://github.com/emann615/emann615/assets/117882385/d389bbed-090c-4914-b1f9-3ed7107ed44a" height="70%" width="70%"/>
 </br>
 </br>
 
