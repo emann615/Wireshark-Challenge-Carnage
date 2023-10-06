@@ -63,6 +63,27 @@ To find the domain, we need to view the HTTP headers for the GET request. We can
 
 **A3) attirenepal.com**
 
+### Q4) Without downloading the file, what is the name of the file in the zip file?
+
+We can find the file contained in the zip file by viewing the response to the GET request. We can view the response by following the TCP stream.
+
+<img src="https://github.com/emann615/emann615/assets/117882385/eb260e9a-1efe-406c-870b-98b2880a70d9" height="70%" width="70%"/>
+</br>
+</br>
+
+The request from the client is in red text, and the response from the server is in blue text. If we examin the response, we can see an XLS file.
+
+<img src="https://github.com/emann615/emann615/assets/117882385/bb1d25a8-2ae0-41e7-9633-f8900e10c353" height="70%" width="70%"/>
+</br>
+</br>
+
+**A4) chart-1530076591.xls**
+
+
+
+
+
+
 
 <img src="" height="70%" width="70%"/>
 </br>
