@@ -129,6 +129,17 @@ If I examine the packet information, I will find three suspicous domains.
 </br>
 </br>
 
+**A7) finejewels.com.au, thietbiagt.com, new.americold.com**
+
+### Q8) Which certificate authority issued the SSL certificate to the first domain from the previous question?
+
+I can select the packet with the first domain and follow the TCP stream to find the certificate authority.
+
+<img src="https://github.com/emann615/emann615/assets/117882385/45e9ac7c-456d-4e73-b96b-9d6b8cd5abc3" height="80%" width="80%"/>
+</br>
+</br>
+
+
 
 
 
