@@ -115,7 +115,7 @@ To decrease the amount of packets I have to look through, I can also fiter for o
 </br>
 </br>
 
-If I examine the packet information, I will find three suspicous domains.
+If I examine the packet information, I can find three suspicous domains.
 
 <img src="https://github.com/emann615/emann615/assets/117882385/7ed0bd47-2d6b-478f-8912-eb277218fe62" height="60%" width="60%"/>
 </br>
@@ -140,6 +140,39 @@ I can select the packet with the first domain and follow the TCP stream to find 
 </br>
 
 **A8) GoDaddy**
+
+### Q9) What are the two IP addresses of the Cobalt Strike servers? Use VirusTotal (the Community tab) to confirm if IPs are identified as Cobalt Strike C2 servers. (answer format: enter the IP addresses in sequential order)
+
+_Check the Conversations menu option._
+
+I can filter for only the HTTP and HTTPS traffic using the following filter: `tcp.port==443 || tcp.port==80`
+
+Next, I can select the Conversations menu option to view a list of IPv4 addresses that are contacted.
+
+<img src="https://github.com/emann615/emann615/assets/117882385/135f5e8a-d14b-4ea7-b003-b45ed2cafb16" height="70%" width="70%"/>
+</br>
+</br>
+
+After going through the list of IP addresses and analyzing them in VirusTotal I was able to find the two Cobalt Strike servers.
+
+<img src="https://github.com/emann615/emann615/assets/117882385/48198359-3103-4d80-bec3-2e68677c478e" height="70%" width="70%"/>
+</br>
+</br>
+
+<img src="https://github.com/emann615/emann615/assets/117882385/d578cf9b-4644-46f4-94ff-7f0ebe7bf033" height="70%" width="70%"/>
+</br>
+</br>
+
+**A9) 185.106.96.158, 185.125.204.174**
+
+
+
+
+
+
+
+
+
 
 
 
