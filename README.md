@@ -173,6 +173,18 @@ After going through the list of IP addresses and analyzing them in VirusTotal I 
 
 **A9) 185.106.96.158, 185.125.204.174**
 
+### Q10) What is the Host header for the first Cobalt Strike IP address from the previous question?
+
+I need to filter for HTTP traffic and the IP address of the first Cobalt Strike server (185.106.96.158) using the following filter: `http && ip.addr==185.106.96.158`
+
+Then, I can select the first packet and follow the TCP stream to find the Host header.
+
+<img src="https://github.com/emann615/emann615/assets/117882385/44703f6d-3fa4-4987-bd24-e918bfae0c90" height="50%" width="50%"/>
+</br>
+</br>
+
+**A10) ocsp.verisign.com**
+
 
 
 
