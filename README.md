@@ -155,7 +155,7 @@ Next, I can select the Conversations menu option to view a list of IPv4 addresse
 
 After going through the list of IP addresses and analyzing them in VirusTotal I was able to find the two Cobalt Strike servers.
 
-<img src="https://github.com/emann615/emann615/assets/117882385/48198359-3103-4d80-bec3-2e68677c478e" height="50%" width="50%"/>
+<img src="https://github.com/emann615/emann615/assets/117882385/48198359-3103-4d80-bec3-2e68677c478e" height="60%" width="60%"/>
 </br>
 </br>
 
