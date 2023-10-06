@@ -149,17 +149,17 @@ I can filter for only the HTTP and HTTPS traffic using the following filter: `tc
 
 Next, I can select the Conversations menu option to view a list of IPv4 addresses that are contacted.
 
-<img src="https://github.com/emann615/emann615/assets/117882385/135f5e8a-d14b-4ea7-b003-b45ed2cafb16" height="70%" width="70%"/>
+<img src="https://github.com/emann615/emann615/assets/117882385/135f5e8a-d14b-4ea7-b003-b45ed2cafb16" height="50%" width="50%"/>
 </br>
 </br>
 
 After going through the list of IP addresses and analyzing them in VirusTotal I was able to find the two Cobalt Strike servers.
 
-<img src="https://github.com/emann615/emann615/assets/117882385/48198359-3103-4d80-bec3-2e68677c478e" height="70%" width="70%"/>
+<img src="https://github.com/emann615/emann615/assets/117882385/48198359-3103-4d80-bec3-2e68677c478e" height="50%" width="50%"/>
 </br>
 </br>
 
-<img src="https://github.com/emann615/emann615/assets/117882385/d578cf9b-4644-46f4-94ff-7f0ebe7bf033" height="70%" width="70%"/>
+<img src="https://github.com/emann615/emann615/assets/117882385/d578cf9b-4644-46f4-94ff-7f0ebe7bf033" height="50%" width="50%"/>
 </br>
 </br>
 
