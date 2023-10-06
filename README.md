@@ -185,12 +185,51 @@ Then, I can select the first packet and follow the TCP stream to find the Host h
 
 **A10) ocsp.verisign.com**
 
+### Q11) What is the domain name for the first IP address of the Cobalt Strike server? You may use VirusTotal to confirm if it's the Cobalt Strike server (check the Community tab).
 
+_Filter out for DNS queries_
 
+A11)
 
+### Q12) What is the domain name of the second Cobalt Strike server IP?  You may use VirusTotal to confirm if it's the Cobalt Strike server (check the Community tab).
 
+_Look for traffic over port 443/HTTPS_
 
+A12)
 
+### Q13) What is the domain name of the post-infection traffic?
+
+_Filter Post HTTP traffic_
+
+A13)
+
+### Q14) What are the first eleven characters that the victim host sends out to the malicious domain involved in the post-infection traffic? 
+
+A14)
+
+### Q15) What was the length for the first packet sent out to the C2 server?
+
+A15)
+
+### Q16) What was the Server header for the malicious domain from the previous question?
+
+A16)
+
+### Q17) The malware used an API to check for the IP address of the victim’s machine. What was the date and time when the DNS query for the IP check domain occurred?
+
+A17)
+
+### Q18) What was the domain in the DNS query from the previous question?
+
+A18)
+
+### Q19) Looks like there was some malicious spam (malspam) activity going on. What was the first MAIL FROM address observed in the traffic?
+
+A19)
+
+### Q20) How many packets were observed for the SMTP traffic?
+
+A20) 
 
 
 
