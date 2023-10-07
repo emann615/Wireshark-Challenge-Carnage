@@ -201,7 +201,7 @@ I can filter for the IP address in the DNS query using the following filter: dns
 
 There is one packet, and in the info column I can see the domain name.
 
-<img src="" height="100%" width="100%"/>
+<img src="https://github.com/emann615/emann615/assets/117882385/882821f0-a824-486f-8314-d696b6f292dd" height="100%" width="100%"/>
 </br>
 </br>
 
