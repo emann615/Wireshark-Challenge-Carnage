@@ -189,6 +189,22 @@ Then, I can select the first packet and follow the TCP stream to find the Host h
 
 _Filter out for DNS queries_
 
+Based on the hint I know I can filter for the DNS queries using the following filter: `dns`
+
+There are 381 dns packets. I can go through them all to see if I can find the domain name, but I want to see if I can filter the packets some more so I can find the domain quicker.
+
+<img src="https://github.com/emann615/emann615/assets/117882385/1237ad8f-be98-4adf-9eb7-9563f76179be" height="100%" width="100%"/>
+</br>
+</br>
+
+I can filter for the IP address in the DNS query using the following filter: dns.a==185.106.96.158
+
+There is one packet, and in the info column I can see the domain name.
+
+<img src="" height="100%" width="100%"/>
+</br>
+</br>
+
 A11)
 
 ### Q12) What is the domain name of the second Cobalt Strike server IP?  You may use VirusTotal to confirm if it's the Cobalt Strike server (check the Community tab).
