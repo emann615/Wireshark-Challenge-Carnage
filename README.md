@@ -205,7 +205,7 @@ There is one packet, and in the info column I can see the domain name.
 </br>
 </br>
 
-A11)
+**A11) survmeter.live**
 
 ### Q12) What is the domain name of the second Cobalt Strike server IP?  You may use VirusTotal to confirm if it's the Cobalt Strike server (check the Community tab).
 
