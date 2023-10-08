@@ -278,7 +278,7 @@ I can find the API using the following filter: `dns contains "api"`
 
 I see a few DNS queries that look interesting going to api.ipify.org.
 
-<img src="(https://github.com/emann615/emann615/assets/117882385/71b789fc-fe66-4cf7-ba2d-5112ed12bd48" height="100%" width="100%"/>
+<img src="https://github.com/emann615/emann615/assets/117882385/71b789fc-fe66-4cf7-ba2d-5112ed12bd48" height="100%" width="100%"/>
 </br>
 </br>
 
