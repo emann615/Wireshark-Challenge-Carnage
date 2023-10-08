@@ -226,7 +226,7 @@ I can repeat the steps in the previous question to find the domain using the fol
 </br>
 </br>
 
-A12)
+**A12) securitybusinpuff.com**
 
 ### Q13) What is the domain name of the post-infection traffic?
 
@@ -240,7 +240,7 @@ If I select the first packet and follow the TCP stream, I can find the domain na
 </br>
 </br>
 
-A13)
+**A13) maldivehost.net**
 
 ### Q14) What are the first eleven characters that the victim host sends out to the malicious domain involved in the post-infection traffic? 
 
@@ -250,7 +250,7 @@ If I look back at the TCP stream at the POST request, I can see the first eleven
 </br>
 </br>
 
-A14)
+**A14) zLIisQRWZI9**
 
 ### Q15) What was the length for the first packet sent out to the C2 server?
 
