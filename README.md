@@ -55,7 +55,7 @@ I looked back at that first HTTP connection and was able to see that it is a GET
 
 ### Q3) What was the domain hosting the malicious zip file?
 
-To find the domain, I needed to view the HTTP headers for the GET request. I found the HTTP headers by looking in the **Packet Details Pane**. The domain is next to the **Host** header.
+To find the domain, I needed to view the HTTP headers for the GET request. I found the HTTP headers by looking in the packet details pane. The domain is next to the **Host** header.
 
 <img src="https://github.com/emann615/emann615/assets/117882385/cfcb9d16-ce6c-444b-86b7-6d1b53f6d2c7" height="50%" width="50%"/>
 </br>
@@ -234,7 +234,7 @@ _Filter Post HTTP traffic_
 
 I filtered for POST HTTP traffic using the following filter: `http.request.method==POST`
 
-Next, I selected the first packet and followed the TCP stream. I can found the domain name next to the **Host** header.
+Next, I selected the first packet and followed the TCP stream. I found the domain name next to the **Host** header.
 
 <img src="https://github.com/emann615/emann615/assets/117882385/d618f58b-b35a-4c5d-8ef7-09e53e5c1736" height="60%" width="60%"/>
 </br>
@@ -244,7 +244,7 @@ Next, I selected the first packet and followed the TCP stream. I can found the d
 
 ### Q14) What are the first eleven characters that the victim host sends out to the malicious domain involved in the post-infection traffic? 
 
-If I look back at the TCP stream at the POST request, I can see the first eleven characters.
+I went back to the TCP stream and saw the first eleven characters of the POST request.
 
 <img src="https://github.com/emann615/emann615/assets/117882385/a27f556e-fe97-4302-acec-290b72ee503e" height="60%" width="60%"/>
 </br>
@@ -254,7 +254,7 @@ If I look back at the TCP stream at the POST request, I can see the first eleven
 
 ### Q15) What was the length for the first packet sent out to the C2 server?
 
-If I look back at the Packet List pane at the POST request, I can find the length in the Length column.
+Back on the packet list pane I was able to see the length of the POST request packet in the **Length** column.
 
 <img src="https://github.com/emann615/emann615/assets/117882385/054cf97e-03ce-4fa0-be79-ffbd6bf734b2" height="100%" width="100%"/>
 </br>
@@ -264,7 +264,7 @@ If I look back at the Packet List pane at the POST request, I can find the lengt
 
 ### Q16) What was the Server header for the malicious domain from the previous question?
 
-If I look back at the TCP stream, I can find the respons from the malicious domain to the POST request to see the Server header. 
+I pulled back up the TCP stream and found the response from the malicious domain to the POST request to see the **Server** header. 
 
 <img src="https://github.com/emann615/emann615/assets/117882385/f6d2f0f8-0413-404b-b17c-8a2f540d29fe" height="60%" width="60%"/>
 </br>
@@ -274,15 +274,15 @@ If I look back at the TCP stream, I can find the respons from the malicious doma
 
 ### Q17) The malware used an API to check for the IP address of the victim’s machine. What was the date and time when the DNS query for the IP check domain occurred?
 
-I can find the API using the following filter: `dns contains "api"`
+I found the API using the following filter: `dns contains "api"`
 
-I see a few DNS queries that look interesting going to api.ipify.org.
+I saw a few DNS queries that look interesting going to api.ipify.org.
 
 <img src="https://github.com/emann615/emann615/assets/117882385/c687b83f-bbfc-40d6-b9e4-8aa2e1e274ab" height="100%" width="100%"/>
 </br>
 </br>
 
-If I got navigate to ipify.org in my web browser, I can see it is an API used to find your public IP address.
+I went to ipify.org in my web browser and saw that it is an API used to find your public IP address.
 
 <img src="https://github.com/emann615/emann615/assets/117882385/abb77bcc-0bd7-4987-8c9e-4768dc6a5872" height="70%" width="70%"/>
 </br>
@@ -301,7 +301,7 @@ The domain was found while answering the previous question.
 
 I filtered for the SMTP trafffic using the following filter: `smtp`
 
-After scrolling through the packets I came across one with a MAIL FROM address in the Info column.
+After scrolling through the packets I came across one with a MAIL FROM address in the **Info** column.
 
 <img src="https://github.com/emann615/emann615/assets/117882385/0eaaad4f-8a35-4182-bbf2-623e990a1118" height="100%" width="100%"/>
 </br>
@@ -311,7 +311,7 @@ After scrolling through the packets I came across one with a MAIL FROM address i
 
 ### Q20) How many packets were observed for the SMTP traffic?
 
-The number of packets is displayed in the bottom Status bar.
+The number of packets was displayed in the bottom Status bar.
 
 <img src="https://github.com/emann615/emann615/assets/117882385/e021dc10-2014-4962-b31f-4b52cf04db21" height="30%" width="30%"/>
 </br>
