@@ -199,9 +199,15 @@ There are 381 dns packets. I can go through them all to see if I can find the do
 
 I can filter for the IP address in the DNS query using the following filter: dns.a==185.106.96.158
 
-There is one packet, and in the info column I can see the domain name.
+There is one packet, and in the Info column I can see the domain name.
 
 <img src="https://github.com/emann615/emann615/assets/117882385/882821f0-a824-486f-8314-d696b6f292dd" height="100%" width="100%"/>
+</br>
+</br>
+
+If I search the IP address in VirusTotal and check the Relations tab, I can also see the domain listed there.
+
+<img src="https://github.com/emann615/emann615/assets/117882385/7d67161d-b801-4559-b405-1585dbb30141" height="70%" width="70%"/>
 </br>
 </br>
 
@@ -210,6 +216,10 @@ There is one packet, and in the info column I can see the domain name.
 ### Q12) What is the domain name of the second Cobalt Strike server IP?  You may use VirusTotal to confirm if it's the Cobalt Strike server (check the Community tab).
 
 _Look for traffic over port 443/HTTPS_
+
+<img src="" height="70%" width="70%"/>
+</br>
+</br>
 
 A12)
 
