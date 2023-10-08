@@ -234,7 +234,7 @@ _Filter Post HTTP traffic_
 
 I can filter for POST HTTP traffic using the following filter: `http.request.method==POST`
 
-If i select the first packet and follow the TCP stream, I can find the domain name next to the Host header.
+If I select the first packet and follow the TCP stream, I can find the domain name next to the Host header.
 
 <img src="https://github.com/emann615/emann615/assets/117882385/d618f58b-b35a-4c5d-8ef7-09e53e5c1736" height="60%" width="60%"/>
 </br>
@@ -244,7 +244,9 @@ A13)
 
 ### Q14) What are the first eleven characters that the victim host sends out to the malicious domain involved in the post-infection traffic? 
 
-<img src="" height="70%" width="70%"/>
+If I look back at the TCP stream at the POST request, I can see the first eleven characters.
+
+<img src="https://github.com/emann615/emann615/assets/117882385/a27f556e-fe97-4302-acec-290b72ee503e" height="60%" width="60%"/>
 </br>
 </br>
 
