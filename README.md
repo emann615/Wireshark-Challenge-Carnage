@@ -270,15 +270,25 @@ If I look back at the TCP stream, I can find the respons from the malicious doma
 </br>
 </br>
 
-A16)
+**A16) Apache/2.4.49 (cPanel) OpenSSL/1.1.1l mod_bwlimited/1.4**
 
 ### Q17) The malware used an API to check for the IP address of the victim’s machine. What was the date and time when the DNS query for the IP check domain occurred?
 
-<img src="" height="70%" width="70%"/>
+I can find the API using the following filter: `dns contains "api"`
+
+I see a few DNS queries that look interesting going to api.ipify.org.
+
+<img src="(https://github.com/emann615/emann615/assets/117882385/71b789fc-fe66-4cf7-ba2d-5112ed12bd48" height="100%" width="100%"/>
 </br>
 </br>
 
-A17)
+If I got navigate to ipify.org in my web browser, I can see it is an API used to find your public IP address.
+
+<img src="https://github.com/emann615/emann615/assets/117882385/abb77bcc-0bd7-4987-8c9e-4768dc6a5872" height="70%" width="70%"/>
+</br>
+</br>
+
+**A17) api.ipify.org**
 
 ### Q18) What was the domain in the DNS query from the previous question?
 
