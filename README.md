@@ -254,7 +254,13 @@ If I look back at the TCP stream at the POST request, I can see the first eleven
 
 ### Q15) What was the length for the first packet sent out to the C2 server?
 
-A15)
+If I look back at the Packet List pane at the POST request, I can find the length in the Length column.
+
+<img src="https://github.com/emann615/emann615/assets/117882385/054cf97e-03ce-4fa0-be79-ffbd6bf734b2" height="100%" width="100%"/>
+</br>
+</br>
+
+**A15) 281**
 
 ### Q16) What was the Server header for the malicious domain from the previous question?
 
