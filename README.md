@@ -278,7 +278,7 @@ I can find the API using the following filter: `dns contains "api"`
 
 I see a few DNS queries that look interesting going to api.ipify.org.
 
-<img src="https://github.com/emann615/emann615/assets/117882385/71b789fc-fe66-4cf7-ba2d-5112ed12bd48" height="100%" width="100%"/>
+<img src="https://github.com/emann615/emann615/assets/117882385/c687b83f-bbfc-40d6-b9e4-8aa2e1e274ab" height="100%" width="100%"/>
 </br>
 </br>
 
@@ -288,15 +288,13 @@ If I got navigate to ipify.org in my web browser, I can see it is an API used to
 </br>
 </br>
 
-**A17) api.ipify.org**
+**A17) 2021-09-24 17:00:04**
 
 ### Q18) What was the domain in the DNS query from the previous question?
 
-<img src="" height="70%" width="70%"/>
-</br>
-</br>
+The domain was found while answering the previous question.
 
-A18)
+**A18) api.ipify.org**
 
 ### Q19) Looks like there was some malicious spam (malspam) activity going on. What was the first MAIL FROM address observed in the traffic?
 
