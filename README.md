@@ -27,15 +27,15 @@ Eric Fischer from the Purchasing Department at Bartell Ltd has received an email
 
 ### Q1) What was the date and time for the first HTTP connection to the malicious IP?
 
-First I need to view only the HTTP traffic using the following filter: `http`
+First I needed to view only the HTTP traffic using the following filter: `http`
 
-The defualt time format is in seconds since beginning of capture. Since I am looking for the date and time of the first HTTP connection, I need to change the time format to UTC.
+The defualt time format is in seconds since beginning of capture. Since I was looking for the date and time of the first HTTP connection, I needed to change the time format to **UTC**.
 
 <img src="https://github.com/emann615/emann615/assets/117882385/1b563f4f-3b7c-4d79-9a1c-e85b4e02bfe5" height="70%" width="70%"/>
 </br>
 </br>
 
-Now I can see the date and time of the first HTTP connection to the malicious IP.
+Then I was able to see the date and time of the first HTTP connection to the malicious IP.
 
 <img src="https://github.com/emann615/emann615/assets/117882385/308a0aa5-700c-458c-9074-b4c56222fc50" height="100%" width="100%"/>
 </br>
@@ -45,7 +45,7 @@ Now I can see the date and time of the first HTTP connection to the malicious IP
 
 ### Q2) What is the name of the zip file that was downloaded?
 
-If I look back at that first HTTP connection, I can see that it is a GET request for a zip file.
+I looked back at that first HTTP connection and was able to see that it is a GET request for a zip file.
 
 <img src="https://github.com/emann615/emann615/assets/117882385/0685cd64-f5b4-41a7-9279-27e8c42a5c62" height="50%" width="50%"/>
 </br>
@@ -55,7 +55,7 @@ If I look back at that first HTTP connection, I can see that it is a GET request
 
 ### Q3) What was the domain hosting the malicious zip file?
 
-To find the domain, I need to view the HTTP headers for the GET request. I can find the HTTP headers by looking in the Packet Details Pane. The domain is next to the Host header.
+To find the domain, I needed to view the HTTP headers for the GET request. I found the HTTP headers by looking in the **Packet Details Pane**. The domain is next to the **Host** header.
 
 <img src="https://github.com/emann615/emann615/assets/117882385/cfcb9d16-ce6c-444b-86b7-6d1b53f6d2c7" height="50%" width="50%"/>
 </br>
@@ -65,13 +65,13 @@ To find the domain, I need to view the HTTP headers for the GET request. I can f
 
 ### Q4) Without downloading the file, what is the name of the file in the zip file?
 
-I can find the file contained in the zip file by viewing the response to the GET request. I can view the response by following the TCP stream.
+I found the file contained in the zip file by viewing the response to the GET request. I viewed the response by following the **TCP stream**.
 
 <img src="https://github.com/emann615/emann615/assets/117882385/eb260e9a-1efe-406c-870b-98b2880a70d9" height="70%" width="70%"/>
 </br>
 </br>
 
-The request from the client is in red text, and the response from the server is in blue text. If I examin the response, I can see an XLS file.
+The request from the client is in red text, and the response from the server is in blue text. I examined the response and found a **XLS** file.
 
 <img src="https://github.com/emann615/emann615/assets/117882385/bb1d25a8-2ae0-41e7-9633-f8900e10c353" height="80%" width="80%"/>
 </br>
@@ -81,7 +81,7 @@ The request from the client is in red text, and the response from the server is 
 
 ### Q5) What is the name of the webserver of the malicious IP from which the zip file was downloaded?
 
-If I view the HTTP hearders of the response, I can find the webserver next to the Server header.
+I looked at the HTTP hearders of the response and found the webserver next to the **Server** header.
 
 <img src="https://github.com/emann615/emann615/assets/117882385/d7a22240-c679-45b4-9dcc-0f26578423bd" height="50%" width="50%"/>
 </br>
@@ -91,7 +91,7 @@ If I view the HTTP hearders of the response, I can find the webserver next to th
 
 ### Q6) What is the version of the webserver from the previous question?
 
-I can find the viersion of the webserver next to the x-powered-by header.
+I found the viersion of the webserver next to the **x-powered-by** header.
 
 <img src="https://github.com/emann615/emann615/assets/117882385/8c63e757-9b29-484e-814f-7728567c6fa5" height="50%" width="50%"/>
 </br>
@@ -103,19 +103,19 @@ I can find the viersion of the webserver next to the x-powered-by header.
 
 _Check HTTPS traffic. Narrow down the timeframe from 16:45:11 to 16:45:30._
 
-Based on the hint, I can use the following filter: `frame.time >= "Sep 24, 2021 16:45:11" && frame.time <= "Sep 24, 2021 16:45:30" && tcp.port==443`
+I fitered for HTTPS traffic and the timeframe using the following filter: `frame.time >= "Sep 24, 2021 16:45:11" && frame.time <= "Sep 24, 2021 16:45:30" && tcp.port==443`
 
 <img src="https://github.com/emann615/emann615/assets/117882385/4a64319d-5258-46ec-a89d-835e1746c959" height="100%" width="100%"/>
 </br>
 </br>
 
-To decrease the amount of packets I have to look through, I can also fiter for only the packets with the Client Hello message by using the following filter: `(frame.time >= "Sep 24, 2021 16:45:11" && frame.time <= "Sep 24, 2021 16:45:30" && tcp.port==443) && (tls.handshake.type == 1)`
+To decrease the amount of packets I had to look through, I modified the fiter to show only the packets with the **Client Hello** message by using the following filter: `(frame.time >= "Sep 24, 2021 16:45:11" && frame.time <= "Sep 24, 2021 16:45:30" && tcp.port==443) && (tls.handshake.type == 1)`
 
 <img src="https://github.com/emann615/emann615/assets/117882385/077b2a33-a49d-45fb-a182-05723e901153" height="100%" width="100%"/>
 </br>
 </br>
 
-If I examine the packet information, I can find three suspicous domains.
+I examined the packet information and found three suspicous domains.
 
 <img src="https://github.com/emann615/emann615/assets/117882385/7ed0bd47-2d6b-478f-8912-eb277218fe62" height="60%" width="60%"/>
 </br>
@@ -133,7 +133,7 @@ If I examine the packet information, I can find three suspicous domains.
 
 ### Q8) Which certificate authority issued the SSL certificate to the first domain from the previous question?
 
-I can select the packet with the first domain and follow the TCP stream to find the certificate authority.
+I selected the packet with the first domain and followed the **TCP stream** to find the certificate authority.
 
 <img src="https://github.com/emann615/emann615/assets/117882385/45e9ac7c-456d-4e73-b96b-9d6b8cd5abc3" height="90%" width="90%"/>
 </br>
@@ -145,15 +145,15 @@ I can select the packet with the first domain and follow the TCP stream to find 
 
 _Check the Conversations menu option._
 
-I can filter for only the HTTP and HTTPS traffic using the following filter: `tcp.port==443 || tcp.port==80`
+First, I filtered for only the **HTTP and HTTPS** traffic using the following filter: `tcp.port==443 || tcp.port==80`
 
-Next, I can select the Conversations menu option to view a list of IPv4 addresses that are contacted.
+Next, I selected the **Conversations** menu option to view a list of **IPv4** addresses that were contacted.
 
 <img src="https://github.com/emann615/emann615/assets/117882385/135f5e8a-d14b-4ea7-b003-b45ed2cafb16" height="50%" width="50%"/>
 </br>
 </br>
 
-After going through the list of IP addresses and analyzing them in VirusTotal I was able to find the two Cobalt Strike servers.
+After going through the list of IP addresses and analyzing them in VirusTotal, I was able to find the two Cobalt Strike servers.
 
 <img src="https://github.com/emann615/emann615/assets/117882385/48198359-3103-4d80-bec3-2e68677c478e" height="60%" width="60%"/>
 </br>
@@ -175,9 +175,9 @@ After going through the list of IP addresses and analyzing them in VirusTotal I 
 
 ### Q10) What is the Host header for the first Cobalt Strike IP address from the previous question?
 
-I need to filter for HTTP traffic and the IP address of the first Cobalt Strike server (185.106.96.158) using the following filter: `http && ip.addr==185.106.96.158`
+I filtered for HTTP traffic and the IP address of the first Cobalt Strike server (185.106.96.158) using the following filter: `http && ip.addr==185.106.96.158`
 
-Then, I can select the first packet and follow the TCP stream to find the Host header.
+Then, I selected the first packet and followed the TCP stream to find the **Host** header.
 
 <img src="https://github.com/emann615/emann615/assets/117882385/44703f6d-3fa4-4987-bd24-e918bfae0c90" height="50%" width="50%"/>
 </br>
@@ -189,23 +189,23 @@ Then, I can select the first packet and follow the TCP stream to find the Host h
 
 _Filter out for DNS queries_
 
-Based on the hint I know I can filter for the DNS queries using the following filter: `dns`
+I filtered for DNS queries using the following filter: `dns`
 
-There are 381 dns packets. I can go through them all to see if I can find the domain name, but I want to see if I can filter the packets some more so I can find the domain quicker.
+There are 381 DNS packets. Instead of going through 381 packets, I wanted to see if I could filter the packets some more so I could find the domain name quicker.
 
 <img src="https://github.com/emann615/emann615/assets/117882385/1237ad8f-be98-4adf-9eb7-9563f76179be" height="100%" width="100%"/>
 </br>
 </br>
 
-I can filter for the IP address in the DNS query using the following filter: dns.a==185.106.96.158
+I was able to filter for the IP address in the DNS query using the following filter: dns.a==185.106.96.158
 
-There is one packet, and in the Info column I can see the domain name.
+That left one packet, and in the **Info** column I was able to see the domain name.
 
 <img src="https://github.com/emann615/emann615/assets/117882385/882821f0-a824-486f-8314-d696b6f292dd" height="100%" width="100%"/>
 </br>
 </br>
 
-If I search the IP address in VirusTotal and check the Relations tab, I can also see the domain listed there.
+I searched the IP address in VirusTotal, and checked the **Relations** tab. The domain name was also listed there.
 
 <img src="https://github.com/emann615/emann615/assets/117882385/7d67161d-b801-4559-b405-1585dbb30141" height="70%" width="70%"/>
 </br>
@@ -216,7 +216,7 @@ If I search the IP address in VirusTotal and check the Relations tab, I can also
 ### Q12) What is the domain name of the second Cobalt Strike server IP?  You may use VirusTotal to confirm if it's the Cobalt Strike server.
 
 
-I can repeat the steps in the previous question to find the domain using the following filter: `dns.a==185.125.204.174`
+I repeated the steps in the previous question to find the domain name of the second server using the following filter: `dns.a==185.125.204.174`
 
 <img src="https://github.com/emann615/emann615/assets/117882385/48d0c3ee-9ae8-4366-aaf0-bd079a19cb84" height="100%" width="100%"/>
 </br>
@@ -232,9 +232,9 @@ I can repeat the steps in the previous question to find the domain using the fol
 
 _Filter Post HTTP traffic_
 
-I can filter for POST HTTP traffic using the following filter: `http.request.method==POST`
+I filtered for POST HTTP traffic using the following filter: `http.request.method==POST`
 
-If I select the first packet and follow the TCP stream, I can find the domain name next to the Host header.
+Next, I selected the first packet and followed the TCP stream. I can found the domain name next to the **Host** header.
 
 <img src="https://github.com/emann615/emann615/assets/117882385/d618f58b-b35a-4c5d-8ef7-09e53e5c1736" height="60%" width="60%"/>
 </br>
