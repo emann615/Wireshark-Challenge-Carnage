@@ -236,7 +236,7 @@ I can filter for POST HTTP traffic using the following filter: `http.request.met
 
 If i select the first packet and follow the TCP stream, I can find the domain name next to the Host header.
 
-<img src="https://github.com/emann615/emann615/assets/117882385/d618f58b-b35a-4c5d-8ef7-09e53e5c1736" height="60%" width="60%"/>
+<img src="https://github.com/emann615/emann615/assets/117882385/d618f58b-b35a-4c5d-8ef7-09e53e5c1736" height="50%" width="50%"/>
 </br>
 </br>
 
