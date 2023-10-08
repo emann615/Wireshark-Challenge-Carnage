@@ -264,21 +264,43 @@ If I look back at the Packet List pane at the POST request, I can find the lengt
 
 ### Q16) What was the Server header for the malicious domain from the previous question?
 
+If I look back at the TCP stream, I can find the respons from the malicious domain to the POST request to see the Server header. 
+
+<img src="https://github.com/emann615/emann615/assets/117882385/f6d2f0f8-0413-404b-b17c-8a2f540d29fe" height="60%" width="60%"/>
+</br>
+</br>
+
 A16)
 
 ### Q17) The malware used an API to check for the IP address of the victim’s machine. What was the date and time when the DNS query for the IP check domain occurred?
+
+<img src="" height="70%" width="70%"/>
+</br>
+</br>
 
 A17)
 
 ### Q18) What was the domain in the DNS query from the previous question?
 
+<img src="" height="70%" width="70%"/>
+</br>
+</br>
+
 A18)
 
 ### Q19) Looks like there was some malicious spam (malspam) activity going on. What was the first MAIL FROM address observed in the traffic?
 
+<img src="" height="70%" width="70%"/>
+</br>
+</br>
+
 A19)
 
 ### Q20) How many packets were observed for the SMTP traffic?
+
+<img src="" height="70%" width="70%"/>
+</br>
+</br>
 
 A20) 
 
