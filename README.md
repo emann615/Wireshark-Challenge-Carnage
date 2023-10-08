@@ -185,7 +185,7 @@ Then, I can select the first packet and follow the TCP stream to find the Host h
 
 **A10) ocsp.verisign.com**
 
-### Q11) What is the domain name for the first IP address of the Cobalt Strike server? You may use VirusTotal to confirm if it's the Cobalt Strike server (check the Community tab).
+### Q11) What is the domain name for the first IP address of the Cobalt Strike server? You may use VirusTotal to confirm if it's the Cobalt Strike server.
 
 _Filter out for DNS queries_
 
@@ -213,11 +213,16 @@ If I search the IP address in VirusTotal and check the Relations tab, I can also
 
 **A11) survmeter.live**
 
-### Q12) What is the domain name of the second Cobalt Strike server IP?  You may use VirusTotal to confirm if it's the Cobalt Strike server (check the Community tab).
+### Q12) What is the domain name of the second Cobalt Strike server IP?  You may use VirusTotal to confirm if it's the Cobalt Strike server.
 
-_Look for traffic over port 443/HTTPS_
 
-<img src="" height="70%" width="70%"/>
+I can repeat the steps in the previous question to find the domain using the following filter: `dns.a==185.125.204.174`
+
+<img src="https://github.com/emann615/emann615/assets/117882385/48d0c3ee-9ae8-4366-aaf0-bd079a19cb84" height="100%" width="100%"/>
+</br>
+</br>
+
+<img src="https://github.com/emann615/emann615/assets/117882385/81df5edc-7ae3-4e00-a28c-4ee31aaaed91" height="70%" width="70%"/>
 </br>
 </br>
 
@@ -226,6 +231,10 @@ A12)
 ### Q13) What is the domain name of the post-infection traffic?
 
 _Filter Post HTTP traffic_
+
+<img src="" height="70%" width="70%"/>
+</br>
+</br>
 
 A13)
 
