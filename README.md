@@ -318,15 +318,3 @@ The number of packets is displayed in the bottom Status bar.
 </br>
 
 **A20) 1439**
-
-
-
-
-
-
-
-
-
-<img src="" height="70%" width="70%"/>
-</br>
-</br>
