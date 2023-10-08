@@ -298,19 +298,26 @@ The domain was found while answering the previous question.
 
 ### Q19) Looks like there was some malicious spam (malspam) activity going on. What was the first MAIL FROM address observed in the traffic?
 
-<img src="" height="70%" width="70%"/>
+
+I filtered for the SMTP trafffic using the following filter: `smtp`
+
+After scrolling through the packets I came across one with a MAIL FROM address in the Info column.
+
+<img src="https://github.com/emann615/emann615/assets/117882385/0eaaad4f-8a35-4182-bbf2-623e990a1118" height="100%" width="100%"/>
 </br>
 </br>
 
-A19)
+**A19) farshin@mailfa.com**
 
 ### Q20) How many packets were observed for the SMTP traffic?
 
-<img src="" height="70%" width="70%"/>
+The number of packets is displayed in the bottom Status bar.
+
+<img src="https://github.com/emann615/emann615/assets/117882385/e021dc10-2014-4962-b31f-4b52cf04db21" height="30%" width="30%"/>
 </br>
 </br>
 
-A20) 
+**A20) 1439**
 
 
 
