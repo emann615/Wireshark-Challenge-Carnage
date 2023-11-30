@@ -1,3 +1,8 @@
+#  Traffic Analysis Exercise - Spoonwatch
+
+## Pcap
+https://malware-traffic-analysis.net/2022/01/07/2022-01-07-traffic-analysis-exercise.pcap.zip
+
 ## Scenario
 -	LAN segment range: 192.168.1.0/24 (10.9.10.0 through 10.9.10.255)
 -	Domain: spoonwatch.net
